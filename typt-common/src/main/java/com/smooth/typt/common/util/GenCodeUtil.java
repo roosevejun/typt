@@ -8,8 +8,8 @@ import java.util.Date;
 
 /**
  * Dao、Service层代码自动生成工具类
- * @author JeffXu 
- * @since 2015-12-09
+ * @author roosevejun
+ * @since 2016-12-09
  */
 public class GenCodeUtil {
 	

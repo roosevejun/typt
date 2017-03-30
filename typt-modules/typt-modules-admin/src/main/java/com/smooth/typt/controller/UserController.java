@@ -38,7 +38,7 @@ import com.smooth.typt.util.WebHelper;
 /**
  * 用户管理Controller
  *
- * @author Jeff Xu
+ * @author roosevejun
  */
 @Controller
 @RequestMapping("/user")

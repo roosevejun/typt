@@ -19,7 +19,7 @@ import com.smooth.typt.common.entity.BaseEntity;
 
 /**
  * 系统用户
- * @author Jeff Xu
+ * @author roosevejun
  *
  */
 @Entity

@@ -8,8 +8,8 @@ import javax.persistence.MappedSuperclass;
 import org.hibernate.annotations.GenericGenerator;
 /**
  * Mysql数据库的主键生成定义:系统自动生成32位不同的字符序列
- * @author Jeff Xu
- * @since 2015-12-09
+ * @author roosevejun
+ * @since 2016-12-09
  */
 @MappedSuperclass
 public class UUIDSequenceIdEntity extends IdEntity{

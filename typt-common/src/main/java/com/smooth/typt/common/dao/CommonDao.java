@@ -8,8 +8,8 @@ import org.springframework.data.repository.NoRepositoryBean;
 
 /**
  * 基础Dao接口定义
- * @author Jeff Xu
- * @since 2015-12-09
+ * @author roosevejun
+ * @since 2016-12-09
  */
 @NoRepositoryBean
 public interface CommonDao<E,ID extends Serializable>  extends JpaRepository<E,ID>, JpaSpecificationExecutor<E> {

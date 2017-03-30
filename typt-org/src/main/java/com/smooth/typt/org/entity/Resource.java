@@ -13,7 +13,7 @@ import javax.persistence.Transient;
 import com.smooth.typt.common.entity.BaseEntity;
 /**
  * 资源
- * @author Jeff Xu
+ * @author roosevejun
  *
  */
 @Entity

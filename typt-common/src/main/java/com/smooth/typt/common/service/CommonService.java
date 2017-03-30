@@ -12,8 +12,8 @@ import org.springframework.data.jpa.domain.Specification;
 import com.smooth.typt.common.dao.CommonDao;
 /**
  * 基础Service的定义
- * @author Jeff Xu
- * @since 2015-12-09
+ * @author roosevejun
+ * @since 2016-12-09
  * @param <E>
  * @param <ID>
  */

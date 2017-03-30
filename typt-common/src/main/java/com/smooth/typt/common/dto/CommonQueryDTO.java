@@ -6,8 +6,8 @@ import java.util.Map;
 /**
  * 公共信息查询封装DTO
  * 
- * @author Jeff Xu
- * @since 2015-12-28
+ * @author roosevejun
+ * @since 2016-12-28
  */
 public class CommonQueryDTO {
 

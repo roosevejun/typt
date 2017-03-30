@@ -4,7 +4,7 @@ import com.smooth.typt.common.dto.CommonQueryDTO;
 
 /**
  * 后台角色查询信息封装
- * @author Jeff Xu
+ * @author roosevejun
  * @since 2016-01-21
  */
 public class RoleQueryDTO extends CommonQueryDTO{

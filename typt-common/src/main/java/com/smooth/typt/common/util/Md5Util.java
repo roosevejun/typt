@@ -4,8 +4,8 @@ import java.security.MessageDigest;
 
 /**
  * md5加密工具类
- * @author Jeff Xu
- * @since 2015-12-09
+ * @author roosevejun
+ * @since 2016-12-09
  */
 public class Md5Util {
 	

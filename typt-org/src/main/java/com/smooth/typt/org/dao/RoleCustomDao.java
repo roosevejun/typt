@@ -13,7 +13,7 @@ public interface RoleCustomDao {
 	
 	/**
 	 * 根据查询条件查询角色分页信息
-	 * @param userQueryDTO
+	 * @param roleQueryDTO
 	 * @return
 	 */
 	PageModel<Role> queryRolePage(RoleQueryDTO roleQueryDTO);

@@ -8,8 +8,8 @@ import javax.persistence.MappedSuperclass;
 import javax.persistence.SequenceGenerator;
 /**
  * Oracle数据库的主键生成定义:系统生成自增长整数型数据作为主键
- * @author Jeff Xu
- * @since 2015-12-09
+ * @author roosevejun
+ * @since 2016-12-09
  */
 @MappedSuperclass
 public class OracleLongEntity extends IdEntity{

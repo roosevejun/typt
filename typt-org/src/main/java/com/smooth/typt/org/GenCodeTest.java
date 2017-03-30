@@ -8,9 +8,9 @@ public class GenCodeTest {
 	
 	public static void main(String[] args) throws IOException{
 		//基本包目录（不用到entity那一层级）
-		String s = "com.jeff.tianti.org";
+		String s = "com.smooth.typt.org";
 		//作者
-		String writer = "xujianfang";
+		String writer = "roosevejun";
 		//Demo为Entity类（放上自己新增的实体类即可）
 //		GenCodeTest.autoGenAllCode(Demo.class,s,writer);
 

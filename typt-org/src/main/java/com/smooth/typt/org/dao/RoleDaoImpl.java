@@ -44,7 +44,7 @@ public class RoleDaoImpl extends CustomBaseSqlDaoImpl implements RoleCustomDao{
 
 	/**
 	 * 根据查询条件查询角色分页信息
-	 * @param userQueryDTO
+	 * @param roleQueryDTO
 	 * @return
 	 */
 	public PageModel<Role> queryRolePage(RoleQueryDTO roleQueryDTO){
