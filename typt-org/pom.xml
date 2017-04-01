@@ -112,11 +112,11 @@
         </dependency>
         <!-- hibernate相关项目依赖 end -->
         <!-- mysql数据库相关依赖 start -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId><!-- 导入Mysql数据库驱动包 -->
-            <version>${mysql.driver.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>mysql</groupId>-->
+            <!--<artifactId>mysql-connector-java</artifactId>&lt;!&ndash; 导入Mysql数据库驱动包 &ndash;&gt;-->
+            <!--<version>${mysql.driver.version}</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>postgresql</groupId>
             <artifactId>postgresql</artifactId>

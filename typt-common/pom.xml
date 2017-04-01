@@ -100,14 +100,6 @@
        <artifactId>hibernate-jpa-2.1-api</artifactId>
        <version>1.0.0.Final</version>
     </dependency>
-    <!-- hibernate相关项目依赖 end -->
-    <!-- mysql数据库相关依赖 start -->
-    <dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId><!-- 导入Mysql数据库驱动包 -->
-			<version>${mysql.driver.version}</version>
-	</dependency>
-	<!-- mysql数据库相关依赖 end -->
 	<!-- log日志相关依赖 start -->
 	<dependency>
 		<groupId>org.apache.logging.log4j</groupId>

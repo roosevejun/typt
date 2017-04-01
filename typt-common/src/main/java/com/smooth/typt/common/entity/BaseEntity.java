@@ -48,7 +48,7 @@ public class BaseEntity extends UUIDSequenceIdEntity implements Serializable{
 	 * 删除标志(0-正常，1-删除)
 	 * @return
 	 */
-	protected  Integer deleteFlag;
+	protected  Integer deleteFlag=0;
 	
 	/**
 	 * 审核状态(0-未审核，1-审核通过，2-审核不通过)
