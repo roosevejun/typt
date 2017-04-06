@@ -9,7 +9,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smooth.typt.modules.admin</groupId>
-    <artifactId>typt-module-admin</artifactId>
+    <artifactId>typt-modules-admin</artifactId>
     <version>${typt.version}</version>
     <packaging>war</packaging>
     <name>tianti-module-admin Maven Webapp</name>
@@ -26,54 +26,14 @@
             <version>${typt.version}</version>
         </dependency>
         <!-- Spring相关项目依赖 start -->
-        <!-- Spring核心依赖 start -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId><!-- 包含Spring框架基本的核心工具类 -->
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId><!-- springIoC（依赖注入）的基础实现 -->
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId><!-- spring 提供在基础 IoC 功能上的扩展服务 -->
-            <version>${spring.version}</version>
-        </dependency>
         <!-- Spring核心依赖 end -->
         <!-- spring 持久层依赖 start -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-tx</artifactId><!-- 封装了spring对于事物的控制  -->
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId><!-- 包含对Spring对JDBC数据访问进行封装的所有类  -->
-            <version>${spring.version}</version>
-        </dependency>
-        <!-- spring 持久层依赖 end -->
-        <!-- Spring web相关依赖 start -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web
-            </artifactId><!-- 包含Web应用开发时，用到Spring框架时所需的核心类，包括自动载入 WebApplicationContext 特性的类、Struts与JSF集成类、文件上传的支持类、Filter类和大量工具辅助类 -->
-            <version>${spring.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId><!-- Spring Web MVC是一种基于Java的实现了Web MVC设计模式的请求驱动类型的轻量级Web框架 -->
             <version>${spring.version}</version>
         </dependency>
         <!-- Spring web相关依赖 end -->
-        <!-- Spring 其它依赖 -->
-        <dependency>
-            <groupId>org.springframework</groupId><!-- spring面向切面编程，提供AOP（面向切面编程） -->
-            <artifactId>spring-aop</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
@@ -85,6 +45,11 @@
             <version>${spring.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
             <version>1.8.10</version>
@@ -92,7 +57,7 @@
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
-            <version>1.5.2.RELEASE</version>
+            <version>${spring.jpa.version}</version>
         </dependency>
         <!-- Spring其他依赖  end-->
         <!-- Spring相关项目依赖 end -->
@@ -102,35 +67,8 @@
             <artifactId>hibernate-core</artifactId>
             <version>${hibernate.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-entitymanager</artifactId>
-            <version>${hibernate.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate.common</groupId>
-            <artifactId>hibernate-commons-annotations</artifactId>
-            <version>${hibernate.annotations.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate.javax.persistence</groupId>
-            <artifactId>hibernate-jpa-2.1-api</artifactId>
-            <version>1.0.0.Final</version>
-        </dependency>
         <!-- hibernate相关项目依赖 end -->
-        <!-- mysql数据库相关依赖 start -->
-        <!--<dependency>-->
-            <!--<groupId>mysql</groupId>-->
-            <!--<artifactId>mysql-connector-java</artifactId>&lt;!&ndash; 导入Mysql数据库驱动包 &ndash;&gt;-->
-            <!--<version>${mysql.driver.version}</version>-->
-        <!--</dependency>-->
-        <!-- mysql数据库相关依赖 end -->
         <!-- log日志相关依赖 start -->
-        <!--<dependency>-->
-            <!--<groupId>log4j</groupId>-->
-            <!--<artifactId>log4j</artifactId>-->
-            <!--<version>1.2.17</version>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
@@ -187,17 +125,7 @@
         <!-- shiro start -->
         <dependency>
             <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-core</artifactId>
-            <version>${shiro.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
             <artifactId>shiro-spring</artifactId>
-            <version>${shiro.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-web</artifactId>
             <version>${shiro.version}</version>
         </dependency>
         <!-- shiro end -->
@@ -269,6 +197,12 @@
             <groupId>net.sf.ehcache</groupId>
             <artifactId>ehcache-web</artifactId>
             <version>2.0.4</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>net.sf.ehcache</groupId>
+                    <artifactId>ehcache-core</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!-- ehcache end -->
         <!-- 单元测试框架 start -->

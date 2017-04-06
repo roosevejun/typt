@@ -8,7 +8,7 @@ import com.smooth.typt.org.entity.Role;
 
 public interface RoleDao extends RoleCustomDao,CommonDao<Role,String>{
 
-	@Query("from Role r where r.roleName = ?1 ")
+	@Query("select r from Role r where r.roleName = ?1 ")
 	public Role findByRoleName(String roleName);
 	
 }
