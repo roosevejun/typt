@@ -150,7 +150,7 @@
 		}else{
 			title = '修改菜单';
 		}
-		$.post('${ctx}/user/dialog/menu_edit?id='+id, {}, function(str){
+		$.post('${ctx}/user/dialog/menu_edit.do?id='+id, {}, function(str){
 			
 			layer.close(loadIdx);
 			
@@ -196,7 +196,7 @@
 			
 			var loadIdx = layer.load();
 			$.ajax({
-				url : '${ctx}/user/ajax/upd_menu/delete_flag',
+				url : '${ctx}/user/ajax/upd_menu/delete_flag.do',
 				type : 'post',
 				data : {
 					'ids' : ids,

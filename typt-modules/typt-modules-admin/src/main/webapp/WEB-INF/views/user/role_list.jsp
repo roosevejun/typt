@@ -139,7 +139,7 @@
 		}else{
 			title = '修改角色';
 		}
-		$.post('${ctx}/user/dialog/role_edit?id='+id, {}, function(str){
+		$.post('${ctx}/user/dialog/role_edit.do?id='+id, {}, function(str){
 			
 			layer.close(loadIdx);
 			
@@ -184,7 +184,7 @@
 			
 			var loadIdx = layer.load();
 			$.ajax({
-				url : '${ctx}/user/ajax/upd_role/delete_flag',
+				url : '${ctx}/user/ajax/upd_role/delete_flag.do',
 				type : 'post',
 				data : {
 					'ids' : ids,

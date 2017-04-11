@@ -85,7 +85,7 @@
                     $("body").attr("class", "skin_" + data_class);
                     $(this).addClass("current").siblings().removeClass("current");
                     $.ajax({
-        				url : '${ctx}/user/ajax/upd/skin',
+        				url : '${ctx}/user/ajax/upd/skin.do',
         				type : 'post',
         				data : {
         					'skin' : "skin_"+data_class

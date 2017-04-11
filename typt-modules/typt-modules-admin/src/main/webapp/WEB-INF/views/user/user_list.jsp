@@ -163,7 +163,7 @@
 		}else{
 			title = '修改用户';
 		}
-		$.post('${ctx}/user/dialog/edit?id='+id, {}, function(str){
+		$.post('${ctx}/user/dialog/edit.do?id='+id, {}, function(str){
 			
 			layer.close(loadIdx);
 			
@@ -193,7 +193,7 @@
 	
 	function myExport(){
 		var userName = $("#userName").val();
-		window.location.href="${ctx}/user/export?userName="+userName;
+		window.location.href="${ctx}/user/export.do?userName="+userName;
 	}
 	
 	function updStatus(id, status){
@@ -211,7 +211,7 @@
 			layer.close(index);
 			var loadIdx = layer.load();
 			$.ajax({
-				url : '${ctx}/user/ajax/upd/status',
+				url : '${ctx}/user/ajax/upd/status.do',
 				type : 'post',
 				data : {
 					'ids' : ids,
