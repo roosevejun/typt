@@ -166,7 +166,7 @@ public class UserController {
         }
 
         Map<String, Object> params = new HashMap<String, Object>();
-        params.put("deleteFlag", "0");
+        params.put("deleteFlag", 0);
         List<Role> roles = roleService.findRoles(params);
         model.addAttribute("roles", roles);
 
